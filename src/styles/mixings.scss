@@ -1,0 +1,23 @@
+@mixin resp-queries($size) {
+    @if $size == sm {
+        @media (min-width: #{$screen-sm-min}) { @content; }
+    } @else if $size == md {
+        @media (min-width: #{screen-md-min}) { @content; }
+    } @else if $size == lg {
+        @media (min-width: #{screen-lg-min}) { @content; }
+    } @else if $size == xl {
+        @media (min-width: #{screen-xl-min}) { @content; }
+    }
+}
+
+@mixin text-hover($color, $color-hover) {
+    color: $color;
+
+    &:hover {
+        color: $color-hover;
+    }
+
+    &:active {
+        color: $color-hover;
+    }
+}

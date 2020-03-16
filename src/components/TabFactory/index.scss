@@ -1,0 +1,30 @@
+@import "../../styles/config.scss";
+
+.navbar {
+    li {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: center;
+        border-bottom: 2px solid $primary-color;
+        margin: 2px;
+        padding: 2px;
+
+        .nav-icon {
+            margin-right: 5px;
+            color: inherit;
+        }
+    }
+    .link {
+        color: $primary-color;
+        @include text-hover($primary-color, $primary-active-color);
+    }
+
+    .active {
+        color: $primary-active-color;
+    }
+
+    .active-border {
+        border-bottom: 2px solid $primary-active-color;
+    }
+}
+

@@ -1,0 +1,67 @@
+[
+    {
+        "city": "Pune",
+        "name": "Lohegaon Pune Airport",
+        "code": "PNQ"
+    },
+    {
+        "city": "Mumbai",
+        "name": "Chhatrapati Shivaji International Airport",
+        "code": "BOM"
+    },
+    {
+        "city": "Delhi",
+        "name": "Delhi Airport",
+        "code": "DEL"
+    },
+    {
+        "city": "Bangkok",
+        "name": "Suvarnabhumi Airport",
+        "code": "BKK"
+    },
+    {
+        "city": "Bengaluru",
+        "name": "Bengaluru International Airport",
+        "code": "BLR"
+    },
+    {
+        "city": "Kolkata",
+        "name": "Netaji Subhash Chandra Bose International Airport",
+        "code": "CCU"
+    },
+    {
+        "city": "Chennai",
+        "name": "Madras,Chennai International Airport",
+        "code": "MAA"
+    },
+    {
+        "city": "Goa",
+        "name": "Dabolim Goa International Airport",
+        "code": "GOI"
+    },
+    {
+        "city": "Dubai",
+        "name": "Dubai International Airportt",
+        "code": "DXB"
+    },
+    {
+        "city": "Singapore",
+        "name": "Changi Airport",
+        "code": "SIN"
+    },
+    {
+        "city": "New Yorl",
+        "name": "All Airport",
+        "code": "NYC"
+    },
+    {
+        "city": "London",
+        "name": "All Airportt",
+        "code": "LON"
+    },
+    {
+        "city": "Sharjah",
+        "name": "Sharjah International Airport",
+        "code": "SHJ"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "price": 5123,
+        "duration": 130,
+        "deptTime": "23:00",
+        "arrivalTime": "01:10",
+        "company": "Go Air",
+        "via": "",
+        "logo_url": "./img/G8.gif" 
+    },
+    {
+        "id": 2,
+        "price": 5176,
+        "duration": 130,
+        "deptTime": "23:35",
+        "arrivalTime": "01:45",
+        "company": "Spicejet",
+        "via": "",
+        "logo_url": "./img/SG.gif"
+    },
+    {
+        "id": 3,
+        "price": 4200,
+        "duration": 620,
+        "deptTime": "20:45",
+        "arrivalTime": "07:05",
+        "company": "Indigo",
+        "via": "HYD",
+        "logo_url": "./img/6E.gif"
+    },
+    {
+        "id": 4,
+        "price": 5123,
+        "duration": 130,
+        "deptTime": "23:00",
+        "arrivalTime": "01:10",
+        "company": "Go Air",
+        "via": "",
+        "logo_url": "./img/G8.gif"
+    },
+    {
+        "id": 5,
+        "price": 5176,
+        "duration": 130,
+        "deptTime": "23:35",
+        "arrivalTime": "01:45",
+        "company": "Spicejet",
+        "via": "",
+        "logo_url": "./img/SG.gif"
+    },
+    {
+        "id": 6,
+        "price": 4200,
+        "duration": 620,
+        "deptTime": "20:45",
+        "arrivalTime": "07:05",
+        "company": "Indigo",
+        "via": "HYD",
+        "logo_url": "./img/6E.gif"
+    }
+]
