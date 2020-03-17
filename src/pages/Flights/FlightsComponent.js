@@ -36,15 +36,15 @@ const travelClassData = [
     }
 ]
 
-const FlightsComponent = memo(({ airports, fetchAirports, fetchFlights }) => {
+const FlightsComponent = memo(({ airports, fetchAirports }) => {
     const history = useHistory();
     const { state, onChange } = useForm({
         departure: "default",
         destination: "default",
         departdate: "",
         returndate: "",
-        travelers: "",
-        class: ""
+        travelers: "1adult",
+        class: "economy"
     });
 
     useEffect(() => {
@@ -53,10 +53,8 @@ const FlightsComponent = memo(({ airports, fetchAirports, fetchFlights }) => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        fetchFlights(state)
-        history.replace({
-            pathname: "/flights_search"
-        })
+        const qs = new URLSearchParams(state).toString();
+        history.push(`/flights_search?${qs}`);
     }
 
     return (

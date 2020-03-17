@@ -1,11 +1,30 @@
-import React, { memo, useState, useCallback } from "react";
+import React, { memo, useState, useCallback, useEffect } from "react";
 
 import "./index.scss";
 
 const strToTime = (str) =>  parseInt(str.split(":")[0]);
 
-const FlightResultsComponent = memo(({ availableFlights, bookingData }) => {
+const FlightResultsComponent = memo(({ availableFlights, fetchFlights, location }) => {
     const [ flights, updateFlights ] = useState(availableFlights);
+    const [ bookingData, updateBookingData ] = useState({});
+    const qsData = new URLSearchParams(location.search);
+
+    useEffect(() => {
+        const data = {
+            departure: qsData.get("departure"),
+            destination: qsData.get("destination"),
+            departdate: qsData.get("departdate"),
+            returndate: qsData.get("returndate"),
+            travelers: qsData.get("travelers"),
+            class: qsData.get("class")
+        }
+        updateBookingData(data) 
+        fetchFlights(data);
+    }, []);
+
+    useEffect(() => {
+        updateFlights(availableFlights);
+    }, [availableFlights])
 
     const sortFlights = useCallback((sortby) => {
         let updatedList = [];
